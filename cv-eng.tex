@@ -14,6 +14,8 @@
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+\usepackage[turkish]{babel}
 
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
@@ -22,7 +24,7 @@
 \usepackage[sc,osf]{mathpazo}
 
 % Set your name here
-\def\name{S\"{u}leyman Cenk YILDIZ}
+\def\name{Süleyman Cenk YILDIZ}
 
 % Replace this with a link to your CV if you like, or set it empty
 % (as in \def\footerlink{}) to remove the link in the footer:
@@ -76,14 +78,12 @@
 
 \begin{document}
 
-% Place name at left
-{\huge \name}
-
-% Alternatively, print name centered and bold:
-%\centerline{\huge \bf }
-
+% Place name at left or center
+{\huge \name} %\centerline{\huge \bf }
 \vspace{0.25in}
 
+%Contact Info {{{
+\begin{comment} %{{{
 \begin{minipage}{0.45\linewidth}
   \href{http://www.boun.edu.tr/}{Bogazici University} \\
   Department of Physics \\
@@ -94,19 +94,25 @@
     Mobile Phone: & (0090) 532 2668603  \\
     Office Phone: & (0090) 212 3597619  \\
     Fax:          &  (0090) 212 2872466 \\
-    Email:        & \href{mailto:cenk.yildiz@cern.ch}{\tt cenk.yildiz@boun.edu.tr} \\
+    Email:        & \href{mailto:cenk.yildiz@boun.edu.tr}{\tt cenk.yildiz@boun.edu.tr} \\
     %Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
   \end{tabular}
 \end{minipage}\\
+\end{comment}%}}}
 
-
-\section*{Personal} % {{{
-
-\begin{itemize}
-\item Born on March 22, 1983.
-\item Citizen of Republic of Turkey.
-\end{itemize}
-
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.cern.ch/}{CERN} \\
+  CH-1211 Genève 23,\\
+  Switzerland
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Mobile Phone: & (0041) 76 7583287\\
+    Office Phone: & (0041) 22 7678934  \\
+    Email:        & \href{mailto:cenk.yildiz@cern.ch}{\tt cenk.yildiz@cern.ch} \\
+    %Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
+  \end{tabular}
+\end{minipage}
 %}}}
 
 \section*{Education}%{{{
@@ -118,7 +124,7 @@
 \end{tabular}
 %}}}
 
-\section*{Projects and Research} %{{{
+\section*{Research Experience} %{{{
 
 \begin{tabular}{ll}
 
@@ -148,38 +154,54 @@
 
 \end{tabular} % }}}
 
-\section*{ Teaching Experience}%{{{
+\section*{Professional Experience}%{{{
 
 \begin{tabular}{lp{0.7\textwidth}}
-2009 - 2010 & \textsl{CAST Experiment, CERN,} Responsible of Sunset Micromegas Detectors and Slow Control Systems\\\\
-2009 - 2012, & \textsl{Bogazici University,} Teaching and Research Assistant\\\\
-2003 - 2005 , & \textsl{Koc University,} Laboratory Research Assistant\\\\
-2003 , & \textsl{Koc University,} Laboratory Assistant for Introductory Physics courses\\\\
-2002 - 2003 , & \textsl{Koc University Volunteers, } Volunteer teaching assistant for economically disadvantaged high school students.\\
+2011 -  & \textsl{CAST Experiment, CERN,} Contactperson of the CAST experiment \\
+2009 - 2011 & \textsl{CAST Experiment, CERN,} Responsible of Sunset Micromegas Detectors and Slow Control Systems\\
 \end{tabular} %}}}
 
-\section*{Research Interest} % {{{
+\section*{Skills} % {{{
 
-I have been blah blah
-
+I have been in the CAST experiment since 2009. During my stay, I've worked in many areas. My main responsibility at CAST
+was on micromegas detector(hardware, maintenance and analysis), vacuum systems, mechanical movement of CAST magnet. I've
+gained important skills on both hardware and software. I've done programming in many languages. Although I mainly
+programmed in python and C++, my programming skills were not limited to that. I've maintained a labview based control
+software, created and maintained several web sites that are built with html and php.
 %}}}
 
-\section*{Schools and Conferences} % {{{
+\section*{Schools Attended} % {{{
 
 \begin{tabular}{lp{0.7\textwidth}}
 2011 January , & ISTAPP - International School of Theory and Analysis in Particle Physics\\
+%2010 July , & Euroscipy - European Conference for Scientists Using Python\\
 2010 January , & ISOTDAQ - International School on Trigger and Data Acquisition\\
-2010 July , & Euroscipy - European Conference for Scientists Using Python\\
 \end{tabular}
 %}}}
 
 \section*{Publications} % {{{
 
 \begin{itemize}
-    \item PRL, CAST...
-    \item Proceeding ICPP 2
+    \item {\em Search for Sub-eV Mass Solar Axions by the CERN Axion Solar Telescope with 3He Buffer Gas} \\
+    The CAST Collaboration, Phys. Rev. Lett. 107, 261302 (2011)
+    \item {\em Performance of micromegas detectors in the CAST Experiment} \\
+    S C Yildiz et al 2012 J. Phys.: Conf. Ser.  347 012029
 \end{itemize}
 %}}}
+
+\section*{Technical \& Computing Skills} %{{{
+
+Python, C++, Linux, Labview, ROOT, Php, \LaTeX
+%}}}
+
+\section*{Teaching Experience}%{{{
+
+\begin{tabular}{lp{0.7\textwidth}}
+2009 - 2012, & \textsl{Bogazici University,} Teaching and Research Assistant\\
+2003 - 2005 , & \textsl{Koc University,} Laboratory Research Assistant\\
+2003 , & \textsl{Koc University,} Laboratory Assistant for Introductory Physics courses\\
+2002 - 2003 , & \textsl{Koc University Volunteers, } Volunteer teaching assistant for economically disadvantaged high school students.\\
+\end{tabular} %}}}
 
 \section*{Awards and Honors} % {{{
 
@@ -191,10 +213,6 @@ I have been blah blah
 \end{tabular}
 %}}}
 
-\section*{Technical \& Computing Skills}
-
-Python, C++, Linux, Labview, ROOT, Php, \LaTeX
-
 \section*{Language Skills} % {{{
 
 \begin{itemize}
@@ -205,11 +223,20 @@ Python, C++, Linux, Labview, ROOT, Php, \LaTeX
 \end{itemize}
 % }}}
 
+\section*{Personal} % {{{
+
+\begin{itemize}
+\item Born on March 22, 1983.
+\item Citizen of Republic of Turkey.
+\end{itemize}
+
+%}}}
+
 \section*{References} %{{{
 References are available upon request
 % Put the references commented % }}}
 
-
+\begin{comment}
 \bigskip
 
 % Footer
@@ -219,5 +246,6 @@ References are available upon request
     %\href{\footerlink}{\texttt{\footerlink}}
   \end{footnotesize}
 \end{center}
+\end{comment}
 
 \end{document}
