@@ -1,0 +1,223 @@
+% LaTeX Curriculum Vitae Template {{{
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.}}}
+
+\documentclass[letterpaper]{article} % {{{
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{verbatim}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{S\"{u}leyman Cenk YILDIZ}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {particle, physics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}% }}}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf }
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.boun.edu.tr/}{Bogazici University} \\
+  Department of Physics \\
+  36360, Bebek, Istanbul
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Mobile Phone: & (0090) 532 2668603  \\
+    Office Phone: & (0090) 212 3597619  \\
+    Fax:          &  (0090) 212 2872466 \\
+    Email:        & \href{mailto:cenk.yildiz@cern.ch}{\tt cenk.yildiz@boun.edu.tr} \\
+    %Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
+  \end{tabular}
+\end{minipage}\\
+
+
+\section*{Personal} % {{{
+
+\begin{itemize}
+\item Born on March 22, 1983.
+\item Citizen of Republic of Turkey.
+\end{itemize}
+
+%}}}
+
+\section*{Education}%{{{
+
+\begin{tabular}{ll}
+2009 - ... ,& Ph.D. Physics, Bogazici University  \\
+2005 - 2008,& M.A. Physics, Bogazici University   \\
+2000 - 2005,& B.S. Physics, Koc University
+\end{tabular}
+%}}}
+
+\section*{Projects and Research} %{{{
+
+\begin{tabular}{ll}
+
+2009 - ... ,& \textsl{PhD Research, CAST Experiment, CERN} \\
+      & CAST experiment and Micromegas Dedector Analysis\\
+      & Supervisor: Prof. Metin Arik\\\\
+
+2006 - 2008,& \textsl{M.S. Thesis, Bogazici University}\\
+      & Unitary Matrix Hopf Algebras and Theta-Deformed Fermion Algebra\\
+      & Supervisor: Prof. Metin Ar\i k
+
+\begin{comment}  % {{{ Indep studies at Koç
+\\\\
+2005 Spring,& \textsl{Independent Study Project, Koc University}\\
+      & Coherent States\\
+      & Supervisor: Prof. Tekin Dereli\\\\
+
+2004 Fall,& \textsl{Independent Study Project, Koc University} \\
+      & Group Theory in Physics, Representations of the Rotation Group\\
+      & Supervisor: Prof. Tekin Dereli\\\\
+
+2004 Spring,& \textsl{Independent Study Project, Bogazici University} \\
+      & The Quantum Mechanics of a Charged Particle in Uniform \\
+      & Electric and Magnetic Fields and Landau Levels\\
+      & Supervisor: Prof. Tekin Dereli\\\\
+\end{comment}%}}}
+
+\end{tabular} % }}}
+
+\section*{ Teaching - Work Experience}%{{{
+
+\begin{tabular}{lp{0.7\textwidth}}
+2009 - 2010 & \textsl{CAST Experiment, CERN,} Responsible of Sunset Micromegas Detectors and Slow Control Systems\\\\
+2009 - 2012, & \textsl{Bogazici University,} Teaching and Research Assistant\\\\
+2003 - 2005 , & \textsl{Koc University,} Laboratory Research Assistant with Adnan Kurt\\\\
+2003 , & \textsl{Koc University,} Laboratory Assistant for Introductory Physics courses\\\\
+2002 - 2003 , & \textsl{Koc University Volunteers, } Volunteer teaching assistant for economically disadvantaged high school students.\\
+\end{tabular} %}}}
+
+\section*{Research Interest} % {{{
+
+I have been blah blah
+
+%}}}
+
+\section*{Schools and Conferences} % {{{
+
+\begin{tabular}{lp{0.7\textwidth}}
+2011 January , & ISTAPP - International School of Theory and Analysis in Particle Physics\\
+2010 January , & ISOTDAQ - International School on Trigger and Data Acquisition\\
+2010 July , & Euroscipy - European Conference for Scientists Using Python\\
+\end{tabular}
+%}}}
+
+\section*{Publications} % {{{
+
+\begin{itemize}
+    \item PRL, CAST...
+    \item Proceeding ICPP 2
+\end{itemize}
+%}}}
+
+\section*{Awards and Honors} % {{{
+
+\begin{tabular}{ll}
+2012,       & Berkol Doğan Award\\
+2005-2007,  & TUBITAK Domestic Scholarship for Masters\\
+2005,       & Top Ranking Student Award - Koc University Physics Department\\
+2000-2005,  & Vehbi Koc Scholarship
+\end{tabular}
+%}}}
+
+\section*{Technical \& Computing Skills}
+
+Python, C++, Linux, Labview, ROOT, Php, \LaTeX
+
+\section*{Language Skills} % {{{
+
+\begin{itemize}
+\item Turkish, \textsl{Native}
+\item English, \textsl{Fluent}
+\item French, \textsl{Intermediate}
+\item Spanish, \textsl{Intermediate}
+\end{itemize}
+% }}}
+
+\section*{References} %{{{
+References are available upon request
+% Put the references commented % }}}
+
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    %\href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}

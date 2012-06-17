@@ -1,0 +1,210 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[turkish]{babel}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Süleyman Cenk Yıldız}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+%\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {particle, physics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.boun.edu.tr/}{Boğaziçi Üniversitesi} \\
+  Fizik Bölümü\\
+  36360, Bebek, İstanbul
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Cep Telefonu: & (0090) 532 2668603  \\
+    İş Telefonu : & (0090) 212 3597619  \\
+    Faks: &  (0090) 212 2872466 \\
+    E-posta: & \href{mailto:cenk.yildiz@cern.ch}{\tt cenk.yildiz@boun.edu.tr} \\
+    %Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
+  \end{tabular}
+\end{minipage}\\
+
+
+\section*{Kişisel}
+
+\begin{itemize}
+\item 23 Mart 1983 doğumlu  
+\item Türkiye Cumhuriyeti vatandaşı
+\end{itemize}
+
+
+\section*{Eğitim}
+
+\begin{itemize}
+  \item 2009 - ... , Doktora, Fizik, Boğaziçi Üniversitesi
+  \item 2005 - 2008, Yüksek Lisans, Fizik, Boğaziçi Üniversitesi
+  \item 2000 - 2005, Lisans, Fizik, Koç Üniversitesi
+\end{itemize}
+
+\section*{Araştırma}
+
+\begin{itemize}
+
+  \item 2009 - ... , \textsl{Doktora Araştırması, CAST, CERN} \\
+       CAST deneyi ve Mikromegas dedektörü analizi \\
+       Danışman: Prof. Metin Arık
+
+  \item 2006 - 2008, \textsl{Master tezi, Boğaziçi Üniversitesi} \\
+       Unitary Matrix Hopf Algebras and Theta-Deformed Fermion Algebra\\
+       Danışman: Prof. Metin Arık
+
+  \item 2005 Bahar , \textsl{Dönem Projesi, Koç Üniversitesi} \\
+       Coherent States\\
+       Danışman: Prof. Tekin Dereli
+
+  \item 2004 Güz , \textsl{Dönem Projesi, Koç Üniversitesi} \\
+       Group Theory in Physics, Representations of the Rotation Group\\
+       Danışman: Prof. Tekin Dereli
+
+  \item 2004 Bahar, \textsl{Dönem Projesi, Boğaziçi Üniversitesi} \\
+       The Quantum Mechanics of a Charged Particle in Uniform \\
+       Electric and Magnetic Fields and Landau Levels\\
+       Danışman: Prof. Tekin Dereli
+
+\end{itemize}
+
+\section*{İş Deneyimi}
+
+\begin{itemize}
+\item 2009 - 2011 \textsl{CAST Deneyi, CERN,} Günbatımı Mikromegas dedektörü ve Kontrol Sistemleri sorumlusu
+\item 2008 - ... , \textsl{Boğaziçi Üniversitesi,} Araştırma Görevlisi
+\item 2003 - 2005 , \textsl{Koç Üniversitesi,} Adnan Kurt danışmanlığında laboratuvar asistanı
+\item 2003 , \textsl{Koç Üniversitesi,} Fiziğe giriş dersleri laboratuvar asistanı
+\item 2002 - 2003 , \textsl{Koç Üniversitesi Gönüllüleri, } Maddi durumu yetersiz çocuklar için gönüllü fizik ve matematik öğretmeni
+\end{itemize}
+
+\section*{Okullar ve Konferanslar}
+
+\begin{itemize}
+\item 2011 Ocak, ISTAPP - International School of Theory and Analysis in Particle Physics
+\item 2010 Ocak, ISOTDAQ - International School on Trigger and Data Acquisition
+\item 2010 Temmuz, Euroscipy - European Conference for Scientists Using Python
+\end{itemize}
+
+\section*{Ödüller ve Burslar}
+
+\begin{itemize}
+\item 2005-2007, TUBITAK Yurtiçi Yüksek Lisans Bursu
+\item 2005, Bölüm Birincisi -  Koç Üniversitesi Fizik Bölümü
+\item 2000-2005, Vehbi Koç Başarı Bursu
+\end{itemize}
+
+\section*{Teknik \& Bilgisayar Bilgisi}
+
+\begin{itemize}
+\item python
+\item linux
+\item ROOT
+\item php
+\item c++
+\item \LaTeX
+\end{itemize}
+
+
+\section*{Yabancı Dil Bilgisi}
+
+\begin{itemize}
+\item Türkçe, \textsl{Anadil}
+\item İngilizce, \textsl{Çok iyi}
+\item İspanyolca, \textsl{Orta}
+\item Fransızca, \textsl{Başlangıç}
+\end{itemize}
+
+
+\section*{Referanslar}
+Referanslar istek üzerine temin edilir.
+% Put the references commented
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Son güncelleme: \today \\
+    %\href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
