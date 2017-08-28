@@ -13,6 +13,9 @@
 
 \usepackage{longtable}
 
+\usepackage{lipsum}
+
+\usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{verbatim}
@@ -22,8 +25,8 @@
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
 % Remove the 'osf' bit if you don't like the old style figures.
-\usepackage[T1]{fontenc}
-\usepackage[sc,osf]{mathpazo}
+%\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
 
 % Set your name here
 \def\name{Süleyman Cenk YILDIZ}
@@ -44,8 +47,8 @@
 }
 
 \geometry{
-  body={6.5in, 8.5in},
-  left=1.0in,
+  body={7.0in, 8.5in},
+  left=0.6in,
   top=1.0in
 }
 
@@ -66,17 +69,18 @@
 % \scshape for small caps,
 % \normalsize, \large, \Large, \LARGE sizes.
 
-% Don't indent paragraphs.
-\setlength\parindent{0em}
-
 % Make lists without bullets
 \renewenvironment{itemize}{
   \begin{list}{}{
-    \setlength{\leftmargin}{1.5em}
+    \setlength{\leftmargin}{0.5em}
+    \setlength{\itemsep}{0em}
+    \setlength{\parsep}{0em}
   }
 }{
   \end{list}
 }% }}}
+
+\setlist{nosep}
 
 \begin{document}
 
@@ -110,7 +114,7 @@
   \begin{tabular}{ll}
     Mobile Phone: & (0041) 76 7583287\\
     Office Phone: & (0041) 22 7674948  \\
-    Email:        & \href{mailto:cenk.yildiz@cern.ch}{\tt cenk.yildiz@cern.ch} \\
+    Email:        & cenk.yildiz@cern.ch \\
     %Home Address: & Rue de la Muse 6, 1205, Geneva, Switzerland\\
     Work Address: & CERN CH-1211 Geneve 23, Switzerland
     %Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
@@ -136,7 +140,7 @@ physics analysis and data acquisition/readout systems.
 %             &\textbullet {\bf }: \\
 %             \\
 
-Dec, 2014 - ... , &  \textsl{University of California, Irvine}, Post Doctoral Scholar\\
+Dec 2014 - now  &  \textsl{University of California, Irvine}, Post Doctoral Scholar\\
              & ATLAS Experiment Muon Spectrometer\\
              &\textbullet {\bf Operations}: Day-to-day operation of the CSC Run-II off detector readout system.\\
              &\textbullet {\bf Integration with ATLAS Trigger-DAQ (TDAQ)}: Integration of the CSC off-detector readout system with the
@@ -154,7 +158,7 @@ Dec, 2014 - ... , &  \textsl{University of California, Irvine}, Post Doctoral Sc
 
              \\
 
-Feb, 2014 - Dec, 2014 , &  \textsl{CERN - Beam Line for Schools}, Project Associate\\
+Feb 2014 - Dec 2014  &  \textsl{CERN - Beam Line for Schools}, Project Associate\\
             &\href{http://cern.ch/bl4s}{http://cern.ch/bl4s} \\
              &\textbullet {\bf Detector Responsible}: Main responsible of the detectors that is used in the beam line, such as
              Delay Wire Chambers, Lead Glass Calorimeters, Scintillators, Cherenkov Counters. The responsibility
@@ -170,7 +174,7 @@ Feb, 2014 - Dec, 2014 , &  \textsl{CERN - Beam Line for Schools}, Project Associ
              &\textbullet {\bf Documentation:} Prepared detailed documentation and Twiki pages about every aspect of the project to ensure the knowledge
              transfer for next years. \\\\
 
-2009 - 2014 , & \textsl{CERN - CERN Axion Solar Telescope}, Doctoral Researcher\\
+2009 - 2014  & \textsl{CERN - CERN Axion Solar Telescope}, Doctoral Researcher\\
              & As part of my doctoral studies, I worked in the CAST experiment, spending most of my time in CERN.
              My responsibilities consisted of:\\
              &\textbullet {\bf Micromegas detectors:} Took responsibility of 2 micromegas detectors for installation and maintenance, data analysis, data
@@ -187,7 +191,7 @@ Feb, 2014 - Dec, 2014 , &  \textsl{CERN - Beam Line for Schools}, Project Associ
              &\textbullet {\bf CAST Contact person:} Trained official CERN guides at CAST, maintained the visitor area, updated CAST
              posters, maintained the CAST official website. \\\\
 
-2009 - 2012, & \textsl{Bogazici University,} Teaching Assistant, Part-time\\
+2009 - 2012 & \textsl{Bogazici University,} Teaching Assistant, Part-time\\
              &  Taught laboratory courses on introductory physics and electronics.\\\\
 2003 - 2005 , & \textsl{Koc University,} Laboratory Research Assistant\\
               & Assisted laboratory experiments in the electronics laboratory.\\\\
@@ -200,7 +204,7 @@ Feb, 2014 - Dec, 2014 , &  \textsl{CERN - Beam Line for Schools}, Project Associ
 
 \begin{tabular}{ll}
 
-2009 - 2013 ,& \textsl{PhD. in Physics, Bogazici University \& CERN Axion Solar Telescope} \\
+2009 - 2013 & \textsl{PhD. in Physics, Bogazici University \& CERN Axion Solar Telescope} \\
       & {\em Thesis Title:} Search for Axions with Micromegas Detectors in the CERN CAST Experiment\\
       &\href{https://cds.cern.ch/record/1629526?ln=en}{[CERN-THESIS-2013-205]} \\
       & Supervisor: Prof. Metin Ar\i k\\\\
@@ -211,38 +215,23 @@ Feb, 2014 - Dec, 2014 , &  \textsl{CERN - Beam Line for Schools}, Project Associ
 
 2000 - 2005 ,& \textsl{B.S. in Physics, Koc University} Graduated as top ranking student.
 
-\begin{comment}  % {{{ Indep studies at Koç
-\\\\
-2005 Spring,& \textsl{Independent Study Project, Koc University}\\
-      & Coherent States\\
-      & Supervisor: Prof. Tekin Dereli\\\\
-
-2004 Fall,& \textsl{Independent Study Project, Koc University} \\
-      & Group Theory in Physics, Representations of the Rotation Group\\
-      & Supervisor: Prof. Tekin Dereli\\\\
-
-2004 Spring,& \textsl{Independent Study Project, Koc University} \\
-      & The Quantum Mechanics of a Charged Particle in Uniform \\
-      & Electric and Magnetic Fields and Landau Levels\\
-      & Supervisor: Prof. Tekin Dereli\\\\
-\end{comment}%}}}
-
 \end{tabular} % }}}
 
 \begin{comment}
 \section*{Teaching Experience}%{{{
 
 \begin{tabular}{lp{0.8\textwidth}}
-2009 - 2012, & \textsl{Bogazici University,} Teaching Assistant\\
-2003 - 2005 , & \textsl{Koc University,} Laboratory Research Assistant\\
-2003 , & \textsl{Koc University,} Laboratory Assistant for Introductory Physics courses\\
-2002 - 2003 , & \textsl{Koc University Volunteers, } Volunteer teaching assistant for economically disadvantaged high school students.\\
+2009 - 2012 & \textsl{Bogazici University,} Teaching Assistant\\
+2003 - 2005  & \textsl{Koc University,} Laboratory Research Assistant\\
+2003  & \textsl{Koc University,} Laboratory Assistant for Introductory Physics courses\\
+2002 - 2003  & \textsl{Koc University Volunteers, } Volunteer teaching assistant for economically disadvantaged high school students.\\
 \end{tabular} %}}}
 \end{comment}
 
 \section*{Technical Skills} %{{{
 
 \begin{itemize}
+  \setlength\itemsep{0em}
     \item Programming      : {\em C++, Python, ROOT, HTML, Bash}
     \item Data Acquisition : {\em NIM, VME, Labview, ATLAS TDAQ Framework }
     %\item Vacuum Systems   : {\em General vacuum knowledge, turbo Pumps, membrane pumps}
@@ -256,12 +245,12 @@ Feb, 2014 - Dec, 2014 , &  \textsl{CERN - Beam Line for Schools}, Project Associ
 \section*{Trainings and Courses} % {{{
 
 \begin{tabular}{lp{0.8\textwidth}}
-2013 June, & tCSC - Thematic CERN School of Computing on High Performance Computing, Split\\
-2012 August, & Euroscipy - European Conference for Scientists Using Python - Advanced Tutorial, Brussels\\
-2011 January , & ISTAPP - International School of Theory and Analysis in Particle Physics, Istanbul\\
-2010 July , & Euroscipy - European Conference for Scientists Using Python - Basic Tutorial, Paris\\
-2010 January , & ISOTDAQ - International School on Trigger and Data Acquisition, Ankara\\
-2009 September, & LabVIEW Basics I-II Course, CERN, Geneva\\
+2013 June & tCSC - Thematic CERN School of Computing on High Performance Computing, Split\\
+2012 August & Euroscipy - European Conference for Scientists Using Python - Advanced Tutorial, Brussels\\
+2011 January  & ISTAPP - International School of Theory and Analysis in Particle Physics, Istanbul\\
+2010 July  & Euroscipy - European Conference for Scientists Using Python - Basic Tutorial, Paris\\
+2010 January  & ISOTDAQ - International School on Trigger and Data Acquisition, Ankara\\
+2009 September & LabVIEW Basics I-II Course, CERN, Geneva\\
 \end{tabular}
 %}}}
 
@@ -269,13 +258,13 @@ Feb, 2014 - Dec, 2014 , &  \textsl{CERN - Beam Line for Schools}, Project Associ
 
 \begin{itemize}
     \item {\em A New ATLAS Muon CSC Readout System with System on Chip Technology on ATCA Platform} \\
-    Topical Workshop on Electronics for Particle Physics, Lisbon, 2015
+    Topical Workshop on Electronics for Particle Physics, Lisbon, 2015 \\
 
     \item {\em X-Ray Detectors of the CAST Experiment} \\
-    13th Topical Seminar on Innovative Particle and Radiation Detectors, Siena, 2013
+    13th Topical Seminar on Innovative Particle and Radiation Detectors, Siena, 2013 \\
 
     \item {\em Performance of micromegas detectors in the CAST Experiment} \\
-    2nd International Conference on Particle Physics, Istanbul, 2011
+    2nd International Conference on Particle Physics, Istanbul, 2011 
 \end{itemize}
 %}}}
 
@@ -292,10 +281,10 @@ Feb, 2014 - Dec, 2014 , &  \textsl{CERN - Beam Line for Schools}, Project Associ
 \section*{Awards and Honors} % {{{
 
 \begin{tabular}{ll}
-2012,       & Berkol Doğan Award - Bogazici University Physics Department\\
-2005-2007,  & TUBITAK Domestic Scholarship for Masters\\
-2005,       & Top Ranking Student Award - Koc University Physics Department\\
-2000-2005,  & Vehbi Koc Scholarship - Koc University
+2012       & Berkol Doğan Award - Bogazici University Physics Department\\
+2005-2007  & TUBITAK Domestic Scholarship for Masters\\
+2005       & Top Ranking Student Award - Koc University Physics Department\\
+2000-2005  & Vehbi Koc Scholarship - Koc University
 \end{tabular}
 %}}}
 
